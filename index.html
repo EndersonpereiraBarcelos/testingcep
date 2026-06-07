@@ -8,57 +8,67 @@
 </head>
 <body>
 
-    <h1>Calculadora de Concentração e Decantação</h1>
+<div class="container">
 
-<div class="formulario">
+    <div class="card">
 
-    <div class="input-group">
-        <label for="cx1">Caixa 1</label>
-        <input type="number" id="cx1" step="0.01">
+        <h1>Calculadora de Concentração</h1>
+
+        <div class="formulario">
+
+            <div class="input-group">
+                <label>Caixa 1</label>
+                <input type="number" step="0.01" id="cx1">
+            </div>
+
+            <div class="input-group">
+                <label>Caixa 2</label>
+                <input type="number" step="0.01" id="cx2">
+            </div>
+
+            <div class="input-group">
+                <label>Caixa 3</label>
+                <input type="number" step="0.01" id="cx3">
+            </div>
+
+            <div class="input-group">
+                <label>Caixa 4</label>
+                <input type="number" step="0.01" id="cx4">
+            </div>
+
+            <div class="input-group">
+                <label>Cone</label>
+                <input type="number" step="0.01" id="cone">
+            </div>
+
+            <div class="input-group">
+                <label>Retalheira</label>
+                <input type="number" step="0.01" id="retalheira">
+            </div>
+
+            <div class="input-group">
+                <label>Masseira</label>
+                <input type="number" step="0.01" id="masseira">
+            </div>
+
+            <div class="input-group">
+                <label>HM</label>
+                <input type="number" step="0.01" id="hm">
+            </div>
+
+            <button onclick="calcular()">
+                Calcular
+            </button>
+
+        </div>
+
     </div>
 
-    <div class="input-group">
-        <label for="cx2">Caixa 2</label>
-        <input type="number" id="cx2" step="0.01">
-    </div>
-
-    <div class="input-group">
-        <label for="cx3">Caixa 3</label>
-        <input type="number" id="cx3" step="0.01">
-    </div>
-
-    <div class="input-group">
-        <label for="cx4">Caixa 4</label>
-        <input type="number" id="cx4" step="0.01">
-    </div>
-
-    <div class="input-group">
-        <label for="cone">Cone</label>
-        <input type="number" id="cone" step="0.01">
-    </div>
-
-    <div class="input-group">
-        <label for="retalheira">Retalheira</label>
-        <input type="number" id="retalheira" step="0.01">
-    </div>
-
-    <div class="input-group">
-        <label for="masseira">Masseira</label>
-        <input type="number" id="masseira" step="0.01">
-    </div>
-
-    <div class="input-group">
-        <label for="hm">HM</label>
-        <input type="number" id="hm" step="0.01">
-    </div>
-
-    <button onclick="calcular()">Calcular</button>
+    <div id="resultado"></div>
 
 </div>
-    <!-- <button onclick="calcular()">Calcular</button> -->
 
-    <!-- <div id="resultado"></div> -->
-    <button onclick="calcular()">Calcular</button>
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
