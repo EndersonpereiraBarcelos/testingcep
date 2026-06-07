@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Concentração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calculadora de Concentração e Decantação</h1>
+
+    <div class="grid">
+        <input type="number" step="0.01" id="cx1" placeholder="Peso CX1">
+        <input type="number" step="0.01" id="cx2" placeholder="Peso CX2">
+        <input type="number" step="0.01" id="cx3" placeholder="Peso CX3">
+        <input type="number" step="0.01" id="cx4" placeholder="Peso CX4">
+        <input type="number" step="0.01" id="cone" placeholder="Peso Cone">
+        <input type="number" step="0.01" id="retalheira" placeholder="Peso Retalheira">
+        <input type="number" step="0.01" id="masseira" placeholder="Peso Masseira">
+        <input type="number" step="0.01" id="hm" placeholder="Peso HM">
+    </div>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
